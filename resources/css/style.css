@@ -1,0 +1,40 @@
+body {
+  background-color: #eee;
+  font-family: sans-serif;
+}
+
+.card {
+  display: inline-block;
+  position: relative;
+  width: 10em;
+  height: 14em;
+  background-color: #ffffff;
+  box-shadow: 0 0.0625em 0.125em rgba(0, 0, 0, 0.15);
+  border-radius: 0.25em;
+  margin: 1px;
+  margin-right: 5px;
+}
+
+.card.red {
+  color: red;
+}
+
+.card-topleft {
+  position: absolute;
+  top: 1em;
+  left: 1.5em;
+}
+
+
+.card-bottomright {
+  position: absolute;
+  bottom: 1em;
+  right: 1.5em;
+  transform: rotate(180deg);
+}
+
+.card-corner-rank, .card-corner-suit {
+  text-align: center;
+  transform: translate(-50%, 0);
+  font-size: xx-large
+}
