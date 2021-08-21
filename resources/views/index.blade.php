@@ -9,8 +9,6 @@
     <title>Document</title>
 </head>
 <body>
-{{ asset('script.js') }}
-
 
 <script type="text/javascript" src="{{ asset('script.js') }}"></script>
 </body>

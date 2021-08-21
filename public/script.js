@@ -29,7 +29,7 @@ const suits = '♠︎ ♥︎ ♣︎ ♦︎'.split(' ');
 
 const getRank = (i) => ranks[i % 13];
 const getSuit = (i) => suits[i / 13 | 0];
-const getColor = (i) => (i / 13 | 0) % 2 ? 'red' : 'black';
+const getColor = (i) => (i / 13 | 0) % 2 ? 'red' : 'black';
 
 const createCard = (i) => {
   const rank = getRank(i);
@@ -46,7 +46,7 @@ const createCard = (i) => {
       ])
     ]),
     div({ class: 'card-bottomright' }, [
-      div({ class: 'card-corner-rank' }, [
+      div({class: 'card-corner-rank' }, [
         rank
       ]),
       div({ class: 'card-corner-suit' }, [
@@ -66,7 +66,7 @@ const deck = div({ class: 'deck' });
 
 cardsData.forEach((i) => {
   const card = createCard(i);
-  
+  console.log(i);
   deck.appendChild(card);
 });
 
