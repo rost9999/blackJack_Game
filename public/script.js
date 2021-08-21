@@ -56,18 +56,13 @@ const createCard = (i) => {
   ]);
 };
 
-const cardsData = new Array(52);
+let DealerDeck = document.getElementById('DealerDeck');
+DealerDeck.appendChild(createCard(0));
+DealerDeck.appendChild(createCard(1));
 
-for (let i = 0; i < cardsData.length; i++) {
-  cardsData[i] = i;
-}
-
-const deck = div({ class: 'deck' });
-
-cardsData.forEach((i) => {
-  const card = createCard(i);
-  console.log(i);
-  deck.appendChild(card);
-});
-
-document.body.appendChild(deck);
+// const deck = div({ class: 'deck' });
+//
+// deck.appendChild(createCard(0));
+// deck.appendChild(createCard(1));
+//
+// document.body.appendChild(deck);
